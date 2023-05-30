@@ -1,0 +1,14 @@
+
+<div *ngIf="user" class="row">
+  <h2>Account Page</h2>
+  <!-- user details   -->
+  <h3>Hi {{ user.firstName }}!</h3>
+  <p>
+    <strong>Id:</strong> {{ user.id }}<br />
+    <strong>Username:</strong> {{ user.userName }}<br />
+    <strong>First Name:</strong> {{ user.firstName }}<br />
+    <strong>Last Name:</strong> {{ user.lastName }}<br />
+  </p>
+ 
+</div>
+<button (click)="logout()" class="btn btn-primary">Logout</button>
